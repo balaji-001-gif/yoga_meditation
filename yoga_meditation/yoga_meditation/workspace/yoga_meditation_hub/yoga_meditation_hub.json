@@ -39,7 +39,7 @@
 
   "content": "[{\"id\":\"cb-member\",\"type\":\"card\",\"data\":{\"card_name\":\"Member Management\",\"col\":12}},{\"id\":\"cb-class\",\"type\":\"card\",\"data\":{\"card_name\":\"Classes & Sessions\",\"col\":12}},{\"id\":\"cb-instructor\",\"type\":\"card\",\"data\":{\"card_name\":\"Instructor Management\",\"col\":12}},{\"id\":\"cb-meditation\",\"type\":\"card\",\"data\":{\"card_name\":\"Meditation Programs\",\"col\":12}},{\"id\":\"cb-health\",\"type\":\"card\",\"data\":{\"card_name\":\"Health & Wellness\",\"col\":12}},{\"id\":\"cb-billing\",\"type\":\"card\",\"data\":{\"card_name\":\"Membership & Billing\",\"col\":12}},{\"id\":\"cb-reports\",\"type\":\"card\",\"data\":{\"card_name\":\"Reports & Analytics\",\"col\":12}}]",
 
-  "shortcuts": [
+  "links": [
     {
       "color": "Blue",
       "format": "{} Active",
