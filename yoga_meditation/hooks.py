@@ -19,22 +19,22 @@ doctype_js = {
 # ─── Scheduled Tasks ──────────────────────────
 scheduler_events = {
     "daily": [
-        "yoga_meditation.yoga_meditation.tasks.send_class_reminders",
-        "yoga_meditation.yoga_meditation.tasks.auto_mark_attendance",
+        "yoga_meditation.tasks.send_class_reminders",
+        "yoga_meditation.tasks.auto_mark_attendance",
     ],
     "weekly": [
-        "yoga_meditation.yoga_meditation.tasks.generate_weekly_report",
+        "yoga_meditation.tasks.generate_weekly_report",
     ],
 }
 
 # ─── On Submit Events ─────────────────────────
 doc_events = {
     "Booking": {
-        "on_submit": "yoga_meditation.yoga_meditation.doctype.booking.booking.on_booking_submit",
-        "on_cancel": "yoga_meditation.yoga_meditation.doctype.booking.booking.on_booking_cancel",
+        "on_submit": "yoga_meditation.doctype.booking.booking.on_booking_submit",
+        "on_cancel": "yoga_meditation.doctype.booking.booking.on_booking_cancel",
     },
     "Attendance Record": {
-        "after_insert": "yoga_meditation.yoga_meditation.doctype.attendance_record.attendance_record.update_class_count",
+        "after_insert": "yoga_meditation.doctype.attendance_record.attendance_record.update_class_count",
     },
 }
 
@@ -52,7 +52,7 @@ fixtures = [
 ]
 
 # ─── After Install ────────────────────────────
-after_install = "yoga_meditation.yoga_meditation.install.after_install"
+after_install = "yoga_meditation.install.after_install"
 
 # ─── App Brand Color ──────────────────────────
 brand_html = "<span class='brand-logo'>🧘 Yoga & Meditation</span>"

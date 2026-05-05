@@ -1,0 +1,11 @@
+{
+  "name": "yoga_meditation",
+  "version": "1.0.0",
+  "description": "Yoga & Meditation Management App for ERPNext v15+",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Your Company",
+  "license": "MIT"
+}
