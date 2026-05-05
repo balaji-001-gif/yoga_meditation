@@ -1,0 +1,21 @@
+{
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "fields": [
+  {
+   "fieldname": "yoga_type",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Yoga Type",
+   "options": "Yoga Type",
+   "reqd": 1
+  }
+ ],
+ "istable": 1,
+ "module": "Yoga Meditation",
+ "name": "Yoga Type MultiSelect",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}
