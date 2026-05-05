@@ -1,0 +1,43 @@
+{
+ "autoname": "YM-PKG-.####",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "package_name","package_code","package_type","is_active",
+  "section_details","description","package_image",
+  "validity_days","total_classes","total_meditation_sessions","column_break_1",
+  "price","discounted_price","tax_template","gst_applicable",
+  "section_inclusions","inclusions","section_terms","terms_conditions"
+ ],
+ "fields": [
+  {"fieldname":"package_name","fieldtype":"Data","label":"Package Name","reqd":1,"in_list_view":1},
+  {"fieldname":"package_code","fieldtype":"Data","label":"Package Code","reqd":1},
+  {"fieldname":"package_type","fieldtype":"Select","label":"Package Type","options":"Trial\nMonthly\nQuarterly\nAnnual\nDrop-In\nWorkshop\nCustom","reqd":1,"in_list_view":1,"in_standard_filter":1},
+  {"fieldname":"is_active","fieldtype":"Check","label":"Is Active","default":1,"in_list_view":1},
+  {"fieldname":"section_details","fieldtype":"Section Break","label":"Package Details"},
+  {"fieldname":"description","fieldtype":"Text Editor","label":"Description"},
+  {"fieldname":"package_image","fieldtype":"Attach Image","label":"Package Image"},
+  {"fieldname":"validity_days","fieldtype":"Int","label":"Validity (Days)","default":30},
+  {"fieldname":"total_classes","fieldtype":"Int","label":"Total Yoga Classes","default":0},
+  {"fieldname":"total_meditation_sessions","fieldtype":"Int","label":"Total Meditation Sessions","default":0},
+  {"fieldname":"column_break_1","fieldtype":"Column Break"},
+  {"fieldname":"price","fieldtype":"Currency","label":"Price","reqd":1,"in_list_view":1},
+  {"fieldname":"discounted_price","fieldtype":"Currency","label":"Discounted Price"},
+  {"fieldname":"tax_template","fieldtype":"Link","label":"Tax Template","options":"Sales Taxes and Charges Template"},
+  {"fieldname":"gst_applicable","fieldtype":"Check","label":"GST Applicable","default":1},
+  {"fieldname":"section_inclusions","fieldtype":"Section Break","label":"What's Included"},
+  {"fieldname":"inclusions","fieldtype":"Table","label":"Inclusions","options":"Package Inclusion"},
+  {"fieldname":"section_terms","fieldtype":"Section Break","label":"Terms & Conditions"},
+  {"fieldname":"terms_conditions","fieldtype":"Text Editor","label":"Terms & Conditions"}
+ ],
+ "module": "Yoga Meditation",
+ "name": "Wellness Package",
+ "naming_rule": "Expression",
+ "permissions": [
+  {"create":1,"delete":1,"email":1,"read":1,"report":1,"role":"System Manager","share":1,"write":1},
+  {"create":1,"email":1,"read":1,"role":"Yoga Manager","write":1},
+  {"read":1,"role":"Yoga Instructor"}
+ ],
+ "title_field": "package_name",
+ "track_changes": 1
+}

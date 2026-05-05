@@ -1,0 +1,16 @@
+{
+ "attach_print": 0,
+ "channel": "Email",
+ "condition": "doc.status == 'Cancelled'",
+ "creation": "2024-01-01 00:00:00.000000",
+ "doctype": "Notification",
+ "document_type": "Yoga Class",
+ "enabled": 1,
+ "event": "Value Change",
+ "value_changed": "status",
+ "message": "<p>Dear Students,</p><p>We regret to inform you that the class <strong>{{ doc.class_name }}</strong> scheduled for <strong>{{ doc.class_date }}</strong> has been cancelled.</p><p>We apologize for the inconvenience. Please contact us to reschedule or get a credit. 🙏</p>",
+ "module": "Yoga Meditation",
+ "name": "Class Cancellation Notification",
+ "recipients": [],
+ "subject": "Class Cancelled: {{ doc.class_name }} on {{ doc.class_date }}"
+}

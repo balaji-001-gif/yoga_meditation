@@ -1,0 +1,7 @@
+{
+ "doctype": "Email Template",
+ "module": "Yoga Meditation",
+ "name": "class_confirmation",
+ "response": "<p>Dear {{ student_name }},</p><p>Your enrollment in <strong>{{ class_name }}</strong> is confirmed!</p><p><strong>Date:</strong> {{ class_date }}<br><strong>Time:</strong> {{ start_time }}<br><strong>Instructor:</strong> {{ instructor }}</p><p>See you on the mat! 🧘‍♀️</p>",
+ "subject": "Class Confirmed: {{ class_name }}"
+}

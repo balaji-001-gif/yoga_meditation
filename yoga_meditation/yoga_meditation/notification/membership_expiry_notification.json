@@ -1,0 +1,17 @@
+{
+ "attach_print": 0,
+ "channel": "Email",
+ "condition": "doc.membership_status == 'Active'",
+ "creation": "2024-01-01 00:00:00.000000",
+ "date_changed": "membership_end",
+ "days_in_advance": 7,
+ "doctype": "Notification",
+ "document_type": "Student Member",
+ "enabled": 1,
+ "event": "Days Before",
+ "message": "<p>Dear {{ doc.full_name }},</p><p>Your membership is expiring on <strong>{{ doc.membership_end }}</strong>.</p><p>Renew now to continue your wellness journey without interruption.</p><p>Contact us at your earliest convenience. 🙏</p>",
+ "module": "Yoga Meditation",
+ "name": "Membership Expiry Notification",
+ "recipients": [],
+ "subject": "Your Yoga Membership Expires in 7 Days"
+}

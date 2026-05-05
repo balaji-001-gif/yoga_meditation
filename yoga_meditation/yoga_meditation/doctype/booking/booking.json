@@ -1,0 +1,47 @@
+{
+ "autoname": "YM-BKG-.YYYY.-.####",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "is_submittable": 1,
+ "field_order": [
+  "student","student_name","booking_type","booking_status","booking_date",
+  "section_class","yoga_class","meditation_session","column_break_1",
+  "wellness_package","package_start_date","package_end_date",
+  "section_payment","amount","discount","net_amount","payment_status","payment_method","sales_invoice",
+  "section_notes","special_requests","notes"
+ ],
+ "fields": [
+  {"fieldname":"student","fieldtype":"Link","label":"Student","options":"Student Member","reqd":1,"in_list_view":1,"in_standard_filter":1},
+  {"fieldname":"student_name","fieldtype":"Data","label":"Student Name","fetch_from":"student.full_name","read_only":1,"in_list_view":1},
+  {"fieldname":"booking_type","fieldtype":"Select","label":"Booking Type","options":"Single Class\nMeditation Session\nWellness Package","reqd":1,"in_list_view":1,"in_standard_filter":1},
+  {"fieldname":"booking_status","fieldtype":"Select","label":"Status","options":"Pending\nConfirmed\nCompleted\nCancelled\nNo Show","default":"Pending","in_list_view":1,"in_standard_filter":1},
+  {"fieldname":"booking_date","fieldtype":"Date","label":"Booking Date","default":"Today","reqd":1,"in_standard_filter":1},
+  {"fieldname":"section_class","fieldtype":"Section Break","label":"Booking Reference"},
+  {"fieldname":"yoga_class","fieldtype":"Link","label":"Yoga Class","options":"Yoga Class","depends_on":"eval:doc.booking_type=='Single Class'"},
+  {"fieldname":"meditation_session","fieldtype":"Link","label":"Meditation Session","options":"Meditation Session","depends_on":"eval:doc.booking_type=='Meditation Session'"},
+  {"fieldname":"column_break_1","fieldtype":"Column Break"},
+  {"fieldname":"wellness_package","fieldtype":"Link","label":"Wellness Package","options":"Wellness Package","depends_on":"eval:doc.booking_type=='Wellness Package'"},
+  {"fieldname":"package_start_date","fieldtype":"Date","label":"Package Start Date","depends_on":"eval:doc.booking_type=='Wellness Package'"},
+  {"fieldname":"package_end_date","fieldtype":"Date","label":"Package End Date","depends_on":"eval:doc.booking_type=='Wellness Package'","read_only":1},
+  {"fieldname":"section_payment","fieldtype":"Section Break","label":"Payment"},
+  {"fieldname":"amount","fieldtype":"Currency","label":"Amount"},
+  {"fieldname":"discount","fieldtype":"Currency","label":"Discount"},
+  {"fieldname":"net_amount","fieldtype":"Currency","label":"Net Amount","read_only":1},
+  {"fieldname":"payment_status","fieldtype":"Select","label":"Payment Status","options":"Unpaid\nPartially Paid\nPaid\nRefunded","default":"Unpaid","in_list_view":1},
+  {"fieldname":"payment_method","fieldtype":"Select","label":"Payment Method","options":"Cash\nCard\nUPI\nBank Transfer\nOnline"},
+  {"fieldname":"sales_invoice","fieldtype":"Link","label":"Sales Invoice","options":"Sales Invoice","read_only":1},
+  {"fieldname":"section_notes","fieldtype":"Section Break","label":"Additional Info"},
+  {"fieldname":"special_requests","fieldtype":"Small Text","label":"Special Requests"},
+  {"fieldname":"notes","fieldtype":"Small Text","label":"Internal Notes"}
+ ],
+ "module": "Yoga Meditation",
+ "name": "Booking",
+ "naming_rule": "Expression",
+ "permissions": [
+  {"create":1,"delete":1,"email":1,"print":1,"read":1,"report":1,"role":"System Manager","share":1,"submit":1,"cancel":1,"amend":1,"write":1},
+  {"create":1,"email":1,"print":1,"read":1,"role":"Yoga Manager","submit":1,"write":1},
+  {"create":1,"read":1,"role":"Yoga Instructor"}
+ ],
+ "title_field": "student_name",
+ "track_changes": 1
+}

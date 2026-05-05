@@ -1,0 +1,5 @@
+{
+ "doctype":"Report","is_standard":"Yes","module":"Yoga Meditation",
+ "name":"Revenue Report","ref_doctype":"Booking","report_type":"Script Report",
+ "roles":[{"role":"System Manager"},{"role":"Yoga Manager"}]
+}

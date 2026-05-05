@@ -1,0 +1,15 @@
+{
+ "doctype": "DocType",
+ "istable": 1,
+ "engine": "InnoDB",
+ "field_order": ["student","student_name","mobile_no","enrollment_date","payment_status"],
+ "fields": [
+  {"fieldname":"student","fieldtype":"Link","label":"Student","options":"Student Member","reqd":1,"in_list_view":1},
+  {"fieldname":"student_name","fieldtype":"Data","label":"Student Name","fetch_from":"student.full_name","read_only":1,"in_list_view":1},
+  {"fieldname":"mobile_no","fieldtype":"Phone","label":"Mobile","fetch_from":"student.mobile_no","read_only":1},
+  {"fieldname":"enrollment_date","fieldtype":"Date","label":"Enrolled On","in_list_view":1},
+  {"fieldname":"payment_status","fieldtype":"Select","label":"Payment","options":"Pending\nPaid\nWaived","default":"Pending","in_list_view":1}
+ ],
+ "module": "Yoga Meditation",
+ "name": "Class Enrollment"
+}

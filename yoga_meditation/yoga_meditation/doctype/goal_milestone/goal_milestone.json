@@ -1,0 +1,12 @@
+{
+ "doctype":"DocType","istable":1,"engine":"InnoDB",
+ "field_order":["milestone_title","target_date","value","achieved","achieved_date"],
+ "fields":[
+  {"fieldname":"milestone_title","fieldtype":"Data","label":"Milestone","reqd":1,"in_list_view":1},
+  {"fieldname":"target_date","fieldtype":"Date","label":"Target Date","in_list_view":1},
+  {"fieldname":"value","fieldtype":"Float","label":"Target Value"},
+  {"fieldname":"achieved","fieldtype":"Check","label":"Achieved","in_list_view":1},
+  {"fieldname":"achieved_date","fieldtype":"Date","label":"Achieved Date"}
+ ],
+ "module":"Yoga Meditation","name":"Goal Milestone"
+}

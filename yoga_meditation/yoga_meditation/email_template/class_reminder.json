@@ -1,0 +1,7 @@
+{
+ "doctype": "Email Template",
+ "module": "Yoga Meditation",
+ "name": "class_reminder",
+ "response": "<p>Dear {{ student_name }},</p><p>This is a friendly reminder about your upcoming class:</p><p><strong>Class:</strong> {{ class_name }}<br><strong>Date:</strong> {{ class_date }}<br><strong>Time:</strong> {{ start_time }}<br><strong>Instructor:</strong> {{ instructor }}<br><strong>Location:</strong> {{ location }}</p><p>Please bring your yoga mat and arrive 5 minutes early. 🧘</p><p>Namaste!</p>",
+ "subject": "Reminder: {{ class_name }} Tomorrow"
+}

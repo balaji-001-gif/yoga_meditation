@@ -1,0 +1,18 @@
+{
+ "based_on": "booking_date",
+ "chart_name": "Class Bookings This Month",
+ "chart_type": "Group By",
+ "creation": "2024-01-01 00:00:00.000000",
+ "document_type": "Booking",
+ "doctype": "Dashboard Chart",
+ "filters_json": "[{\"fieldname\":\"booking_status\",\"label\":\"Status\",\"fieldtype\":\"Select\",\"options\":\"Confirmed\",\"default\":\"Confirmed\"}]",
+ "group_by_based_on": "booking_type",
+ "group_by_type": "Count",
+ "is_public": 1,
+ "is_standard": 1,
+ "module": "Yoga Meditation",
+ "name": "Class Bookings This Month",
+ "time_interval": "Monthly",
+ "timeseries": 0,
+ "type": "Donut"
+}

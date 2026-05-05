@@ -1,0 +1,46 @@
+{
+ "autoname": "YM-MED-.YYYY.-.####",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "is_submittable": 1,
+ "field_order": [
+  "session_title","meditation_type","status","section_schedule",
+  "instructor","session_date","start_time","duration_minutes","location_type","location_detail",
+  "column_break_1","max_participants","registered_count","available_spots",
+  "section_content","description","audio_guide_link","background_music","guided_script",
+  "section_enrollment","participants"
+ ],
+ "fields": [
+  {"fieldname":"session_title","fieldtype":"Data","label":"Session Title","reqd":1,"in_list_view":1},
+  {"fieldname":"meditation_type","fieldtype":"Select","label":"Meditation Type","options":"Mindfulness\nGuided Visualization\nBreathwork (Pranayama)\nBody Scan\nLoving Kindness (Metta)\nTranscendental\nChakra\nSound Bath\nWalking Meditation","reqd":1,"in_list_view":1,"in_standard_filter":1},
+  {"fieldname":"status","fieldtype":"Select","label":"Status","options":"Draft\nScheduled\nCompleted\nCancelled","default":"Draft","in_list_view":1},
+  {"fieldname":"section_schedule","fieldtype":"Section Break","label":"Schedule"},
+  {"fieldname":"instructor","fieldtype":"Link","label":"Facilitator","options":"Instructor","in_standard_filter":1},
+  {"fieldname":"session_date","fieldtype":"Date","label":"Session Date","reqd":1,"in_standard_filter":1},
+  {"fieldname":"start_time","fieldtype":"Time","label":"Start Time"},
+  {"fieldname":"duration_minutes","fieldtype":"Int","label":"Duration (minutes)","default":30},
+  {"fieldname":"location_type","fieldtype":"Select","label":"Location Type","options":"In-Studio\nOnline\nOutdoor\nHybrid","default":"In-Studio"},
+  {"fieldname":"location_detail","fieldtype":"Data","label":"Location / Link"},
+  {"fieldname":"column_break_1","fieldtype":"Column Break"},
+  {"fieldname":"max_participants","fieldtype":"Int","label":"Max Participants","default":15},
+  {"fieldname":"registered_count","fieldtype":"Int","label":"Registered","default":0,"read_only":1},
+  {"fieldname":"available_spots","fieldtype":"Int","label":"Available Spots","read_only":1},
+  {"fieldname":"section_content","fieldtype":"Section Break","label":"Session Content"},
+  {"fieldname":"description","fieldtype":"Text Editor","label":"Description"},
+  {"fieldname":"audio_guide_link","fieldtype":"Data","label":"Audio Guide URL"},
+  {"fieldname":"background_music","fieldtype":"Data","label":"Background Music"},
+  {"fieldname":"guided_script","fieldtype":"Text Editor","label":"Guided Script / Notes"},
+  {"fieldname":"section_enrollment","fieldtype":"Section Break","label":"Participants"},
+  {"fieldname":"participants","fieldtype":"Table","label":"Participants","options":"Session Participant"}
+ ],
+ "module": "Yoga Meditation",
+ "name": "Meditation Session",
+ "naming_rule": "Expression",
+ "permissions": [
+  {"create":1,"delete":1,"email":1,"print":1,"read":1,"report":1,"role":"System Manager","share":1,"submit":1,"cancel":1,"write":1},
+  {"create":1,"email":1,"read":1,"role":"Yoga Manager","submit":1,"write":1},
+  {"read":1,"role":"Yoga Instructor"}
+ ],
+ "title_field": "session_title",
+ "track_changes": 1
+}

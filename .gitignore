@@ -1,0 +1,10 @@
+*.pyc
+__pycache__/
+*.egg-info/
+node_modules/
+dist/
+.env
+*.sqlite
+*.log
+.DS_Store
+Thumbs.db

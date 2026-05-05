@@ -1,0 +1,17 @@
+{
+ "based_on": "booking_date",
+ "chart_name": "Revenue Trend",
+ "chart_type": "Sum",
+ "creation": "2024-01-01 00:00:00.000000",
+ "document_type": "Booking",
+ "doctype": "Dashboard Chart",
+ "filters_json": "[{\"fieldname\":\"docstatus\",\"label\":\"Submitted\",\"value\":1}]",
+ "is_public": 1,
+ "is_standard": 1,
+ "module": "Yoga Meditation",
+ "name": "Revenue Trend",
+ "time_interval": "Monthly",
+ "timeseries": 1,
+ "type": "Bar",
+ "value_based_on": "net_amount"
+}

@@ -1,0 +1,14 @@
+{
+ "charts": [
+  {"chart": "Class Bookings This Month", "width": "Half"},
+  {"chart": "Revenue Trend", "width": "Half"},
+  {"chart": "Student Membership Status", "width": "Half"},
+  {"chart": "Top Classes by Attendance", "width": "Half"}
+ ],
+ "creation": "2024-01-01 00:00:00.000000",
+ "doctype": "Dashboard",
+ "is_default": 0,
+ "is_standard": 1,
+ "module": "Yoga Meditation",
+ "name": "Yoga Meditation Dashboard"
+}

@@ -1,0 +1,15 @@
+{
+ "attach_print": 1,
+ "channel": "Email",
+ "condition": "doc.booking_status == 'Confirmed'",
+ "creation": "2024-01-01 00:00:00.000000",
+ "doctype": "Notification",
+ "document_type": "Booking",
+ "enabled": 1,
+ "event": "New",
+ "message": "<p>Dear {{ doc.student_name }},</p><p>Your booking <strong>{{ doc.name }}</strong> has been confirmed!</p><p><strong>Type:</strong> {{ doc.booking_type }}<br><strong>Date:</strong> {{ doc.booking_date }}<br><strong>Amount:</strong> ₹{{ doc.net_amount }}</p><p>Thank you for choosing us for your wellness journey! 🌿</p>",
+ "module": "Yoga Meditation",
+ "name": "Booking Confirmed Notification",
+ "recipients": [{"receiver_by_document_field": "student_name"}],
+ "subject": "Booking Confirmed - {{ doc.name }}"
+}

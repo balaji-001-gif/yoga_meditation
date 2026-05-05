@@ -1,0 +1,47 @@
+{
+ "autoname": "YM-PROG-.YYYY.-.####",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "student","tracking_date","instructor","session_reference",
+  "section_physical","flexibility_score","strength_score","balance_score","endurance_score",
+  "column_break_1","weight_kg","bmi","resting_heart_rate","blood_pressure",
+  "section_mental","stress_level","mood_score","sleep_quality","mindfulness_score",
+  "section_notes","session_notes","instructor_feedback","photo_before","photo_after"
+ ],
+ "fields": [
+  {"fieldname":"student","fieldtype":"Link","label":"Student","options":"Student Member","reqd":1,"in_list_view":1,"in_standard_filter":1},
+  {"fieldname":"tracking_date","fieldtype":"Date","label":"Date","reqd":1,"default":"Today","in_list_view":1,"in_standard_filter":1},
+  {"fieldname":"instructor","fieldtype":"Link","label":"Instructor","options":"Instructor","in_list_view":1},
+  {"fieldname":"session_reference","fieldtype":"Data","label":"Session Reference"},
+  {"fieldname":"section_physical","fieldtype":"Section Break","label":"Physical Metrics"},
+  {"fieldname":"flexibility_score","fieldtype":"Rating","label":"Flexibility (1-5)"},
+  {"fieldname":"strength_score","fieldtype":"Rating","label":"Strength (1-5)"},
+  {"fieldname":"balance_score","fieldtype":"Rating","label":"Balance (1-5)"},
+  {"fieldname":"endurance_score","fieldtype":"Rating","label":"Endurance (1-5)"},
+  {"fieldname":"column_break_1","fieldtype":"Column Break"},
+  {"fieldname":"weight_kg","fieldtype":"Float","label":"Weight (kg)"},
+  {"fieldname":"bmi","fieldtype":"Float","label":"BMI","read_only":1},
+  {"fieldname":"resting_heart_rate","fieldtype":"Int","label":"Resting Heart Rate (bpm)"},
+  {"fieldname":"blood_pressure","fieldtype":"Data","label":"Blood Pressure (e.g. 120/80)"},
+  {"fieldname":"section_mental","fieldtype":"Section Break","label":"Mental & Emotional"},
+  {"fieldname":"stress_level","fieldtype":"Select","label":"Stress Level","options":"Low\nModerate\nHigh\nVery High"},
+  {"fieldname":"mood_score","fieldtype":"Rating","label":"Mood Score (1-5)"},
+  {"fieldname":"sleep_quality","fieldtype":"Select","label":"Sleep Quality","options":"Poor\nFair\nGood\nExcellent"},
+  {"fieldname":"mindfulness_score","fieldtype":"Rating","label":"Mindfulness Score (1-5)"},
+  {"fieldname":"section_notes","fieldtype":"Section Break","label":"Notes & Feedback"},
+  {"fieldname":"session_notes","fieldtype":"Text Editor","label":"Student Notes"},
+  {"fieldname":"instructor_feedback","fieldtype":"Text Editor","label":"Instructor Feedback"},
+  {"fieldname":"photo_before","fieldtype":"Attach Image","label":"Progress Photo (Before)"},
+  {"fieldname":"photo_after","fieldtype":"Attach Image","label":"Progress Photo (After)"}
+ ],
+ "module": "Yoga Meditation",
+ "name": "Progress Tracker",
+ "naming_rule": "Expression",
+ "permissions": [
+  {"create":1,"delete":1,"read":1,"report":1,"role":"System Manager","write":1},
+  {"create":1,"read":1,"role":"Yoga Manager","write":1},
+  {"create":1,"read":1,"role":"Yoga Instructor","write":1}
+ ],
+ "track_changes": 1
+}

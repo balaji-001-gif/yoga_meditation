@@ -1,0 +1,8 @@
+[project]
+name = "yoga_meditation"
+version = "1.0.0"
+requires-python = ">=3.10"
+
+[tool.bench]
+app_name = "yoga_meditation"
+app_title = "Yoga Meditation"

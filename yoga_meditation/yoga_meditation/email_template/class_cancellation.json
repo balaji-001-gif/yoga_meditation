@@ -1,0 +1,7 @@
+{
+ "doctype": "Email Template",
+ "module": "Yoga Meditation",
+ "name": "class_cancellation",
+ "response": "<p>Dear {{ student_name }},</p><p>We regret to inform you that <strong>{{ class_name }}</strong> scheduled for <strong>{{ class_date }}</strong> has been cancelled.</p><p>We sincerely apologize for the inconvenience. Please contact us to reschedule.</p><p>Namaste 🙏</p>",
+ "subject": "Class Cancelled: {{ class_name }}"
+}

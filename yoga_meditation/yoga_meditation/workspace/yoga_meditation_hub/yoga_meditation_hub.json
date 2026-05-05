@@ -1,0 +1,34 @@
+{
+ "charts": [
+  {"chart_name": "Class Bookings This Month", "label": "Class Bookings This Month"},
+  {"chart_name": "Revenue Trend", "label": "Revenue Trend"},
+  {"chart_name": "Student Membership Status", "label": "Membership Status"}
+ ],
+ "content": "[{\"id\":\"intro\",\"type\":\"header\",\"data\":{\"text\":\"🧘 Yoga & Meditation Hub\",\"col\":12}},{\"id\":\"shortcuts_row\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Yoga Class\",\"col\":3}},{\"id\":\"student\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Student Member\",\"col\":3}},{\"id\":\"booking\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Booking\",\"col\":3}},{\"id\":\"pkg\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Wellness Package\",\"col\":3}}]",
+ "creation": "2024-01-01 00:00:00.000000",
+ "doctype": "Workspace",
+ "hide_custom": 0,
+ "is_hidden": 0,
+ "label": "Yoga & Meditation",
+ "module": "Yoga Meditation",
+ "name": "Yoga & Meditation",
+ "onboarding": "",
+ "parent_page": "",
+ "public": 1,
+ "roles": [],
+ "sequence_id": 1.0,
+ "shortcuts": [
+  {"color": "Green", "format": "{} Active Classes", "label": "Yoga Class", "link_to": "Yoga Class", "stats_filter": "{\"status\": \"Scheduled\"}", "type": "DocType"},
+  {"color": "Blue", "format": "{} Students", "label": "Student Member", "link_to": "Student Member", "type": "DocType"},
+  {"color": "Orange", "format": "{} Bookings", "label": "Booking", "link_to": "Booking", "stats_filter": "{\"booking_status\": \"Confirmed\"}", "type": "DocType"},
+  {"color": "Purple", "format": "{} Packages", "label": "Wellness Package", "link_to": "Wellness Package", "stats_filter": "{\"is_active\": 1}", "type": "DocType"},
+  {"color": "Teal", "label": "Instructor", "link_to": "Instructor", "type": "DocType"},
+  {"color": "Pink", "label": "Meditation Session", "link_to": "Meditation Session", "type": "DocType"},
+  {"color": "Yellow", "label": "Attendance Record", "link_to": "Attendance Record", "type": "DocType"},
+  {"label": "Student Progress Report", "link_to": "Student Progress Report", "type": "Report"},
+  {"label": "Class Attendance Report", "link_to": "Class Attendance Report", "type": "Report"},
+  {"label": "Revenue Report", "link_to": "Revenue Report", "type": "Report"},
+  {"label": "Wellness Goal", "link_to": "Wellness Goal", "type": "DocType"},
+  {"label": "Progress Tracker", "link_to": "Progress Tracker", "type": "DocType"}
+ ]
+}

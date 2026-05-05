@@ -1,0 +1,29 @@
+{
+ "autoname": "YM-ATT-.YYYY.-.####",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "reference_type","yoga_class","meditation_session","attendance_date",
+  "column_break_1","instructor","status","section_students","attendance_students"
+ ],
+ "fields": [
+  {"fieldname":"reference_type","fieldtype":"Select","label":"Reference Type","options":"Yoga Class\nMeditation Session","reqd":1,"in_list_view":1},
+  {"fieldname":"yoga_class","fieldtype":"Link","label":"Yoga Class","options":"Yoga Class","depends_on":"eval:doc.reference_type=='Yoga Class'","in_standard_filter":1},
+  {"fieldname":"meditation_session","fieldtype":"Link","label":"Meditation Session","options":"Meditation Session","depends_on":"eval:doc.reference_type=='Meditation Session'"},
+  {"fieldname":"attendance_date","fieldtype":"Date","label":"Attendance Date","reqd":1,"default":"Today","in_list_view":1,"in_standard_filter":1},
+  {"fieldname":"column_break_1","fieldtype":"Column Break"},
+  {"fieldname":"instructor","fieldtype":"Link","label":"Instructor","options":"Instructor","in_list_view":1},
+  {"fieldname":"status","fieldtype":"Select","label":"Status","options":"Draft\nSubmitted","default":"Draft"},
+  {"fieldname":"section_students","fieldtype":"Section Break","label":"Student Attendance"},
+  {"fieldname":"attendance_students","fieldtype":"Table","label":"Students","options":"Attendance Student"}
+ ],
+ "module": "Yoga Meditation",
+ "name": "Attendance Record",
+ "naming_rule": "Expression",
+ "permissions": [
+  {"create":1,"delete":1,"read":1,"report":1,"role":"System Manager","write":1},
+  {"create":1,"read":1,"role":"Yoga Manager","write":1},
+  {"create":1,"read":1,"role":"Yoga Instructor","write":1}
+ ],
+ "track_changes": 1
+}

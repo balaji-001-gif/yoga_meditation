@@ -1,0 +1,15 @@
+{
+ "chart_name": "Student Membership Status",
+ "chart_type": "Group By",
+ "creation": "2024-01-01 00:00:00.000000",
+ "document_type": "Student Member",
+ "doctype": "Dashboard Chart",
+ "group_by_based_on": "membership_status",
+ "group_by_type": "Count",
+ "is_public": 1,
+ "is_standard": 1,
+ "module": "Yoga Meditation",
+ "name": "Student Membership Status",
+ "timeseries": 0,
+ "type": "Pie"
+}

@@ -1,0 +1,7 @@
+{
+ "doctype": "Email Template",
+ "module": "Yoga Meditation",
+ "name": "booking_confirmation",
+ "response": "<p>Dear {{ student_name }},</p><p>Your booking <strong>{{ booking_id }}</strong> has been confirmed!</p><p><strong>Booking Type:</strong> {{ booking_type }}<br><strong>Date:</strong> {{ booking_date }}</p><p>We look forward to seeing you! 🙏</p><p>Namaste,<br>The Yoga & Meditation Team</p>",
+ "subject": "Booking Confirmed - {{ booking_id }}"
+}

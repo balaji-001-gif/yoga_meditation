@@ -1,0 +1,12 @@
+{
+ "doctype":"DocType","istable":1,"engine":"InnoDB",
+ "field_order":["student","student_name","attendance_status","feedback_rating","feedback_notes"],
+ "fields":[
+  {"fieldname":"student","fieldtype":"Link","label":"Student","options":"Student Member","reqd":1,"in_list_view":1},
+  {"fieldname":"student_name","fieldtype":"Data","label":"Student Name","fetch_from":"student.full_name","read_only":1,"in_list_view":1},
+  {"fieldname":"attendance_status","fieldtype":"Select","label":"Attendance","options":"Registered\nPresent\nAbsent\nLate","default":"Registered","in_list_view":1},
+  {"fieldname":"feedback_rating","fieldtype":"Rating","label":"Rating"},
+  {"fieldname":"feedback_notes","fieldtype":"Small Text","label":"Feedback"}
+ ],
+ "module":"Yoga Meditation","name":"Session Participant"
+}

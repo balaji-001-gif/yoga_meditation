@@ -1,0 +1,4 @@
+[
+ {"doctype": "Role", "role_name": "Yoga Manager", "desk_access": 1},
+ {"doctype": "Role", "role_name": "Yoga Instructor", "desk_access": 1}
+]

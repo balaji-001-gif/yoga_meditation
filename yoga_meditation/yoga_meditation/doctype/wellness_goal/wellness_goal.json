@@ -1,0 +1,37 @@
+{
+ "autoname": "YM-GOAL-.####",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "student","goal_title","goal_type","target_date","status",
+  "section_details","description","target_value","current_value","unit","progress_pct",
+  "section_milestones","milestones","section_notes","notes"
+ ],
+ "fields": [
+  {"fieldname":"student","fieldtype":"Link","label":"Student","options":"Student Member","reqd":1,"in_list_view":1,"in_standard_filter":1},
+  {"fieldname":"goal_title","fieldtype":"Data","label":"Goal Title","reqd":1,"in_list_view":1},
+  {"fieldname":"goal_type","fieldtype":"Select","label":"Goal Type","options":"Flexibility\nStrength\nWeight Loss\nStress Reduction\nMindfulness\nBreathwork\nBalance\nCustom","in_list_view":1,"in_standard_filter":1},
+  {"fieldname":"target_date","fieldtype":"Date","label":"Target Date","in_list_view":1},
+  {"fieldname":"status","fieldtype":"Select","label":"Status","options":"Active\nAchieved\nOn Hold\nAbandoned","default":"Active","in_list_view":1},
+  {"fieldname":"section_details","fieldtype":"Section Break","label":"Goal Details"},
+  {"fieldname":"description","fieldtype":"Small Text","label":"Description"},
+  {"fieldname":"target_value","fieldtype":"Float","label":"Target Value"},
+  {"fieldname":"current_value","fieldtype":"Float","label":"Current Value"},
+  {"fieldname":"unit","fieldtype":"Data","label":"Unit (e.g. cm, kg, minutes)"},
+  {"fieldname":"progress_pct","fieldtype":"Percent","label":"Progress %","read_only":1},
+  {"fieldname":"section_milestones","fieldtype":"Section Break","label":"Milestones"},
+  {"fieldname":"milestones","fieldtype":"Table","label":"Milestones","options":"Goal Milestone"},
+  {"fieldname":"section_notes","fieldtype":"Section Break","label":"Notes"},
+  {"fieldname":"notes","fieldtype":"Text Editor","label":"Notes"}
+ ],
+ "module": "Yoga Meditation",
+ "name": "Wellness Goal",
+ "naming_rule": "Expression",
+ "permissions": [
+  {"create":1,"delete":1,"read":1,"report":1,"role":"System Manager","write":1},
+  {"create":1,"read":1,"role":"Yoga Manager","write":1},
+  {"read":1,"role":"Yoga Instructor"}
+ ],
+ "title_field": "goal_title",
+ "track_changes": 1
+}
