@@ -25,14 +25,14 @@ def get_data(filters):
         conditions += " AND YEAR(booking_date) = %(year)s"
         values["year"] = filters["year"]
     rows = frappe.db.sql(f"""
-        SELECT DATE_FORMAT(booking_date,'%Y-%m') as month,
+        SELECT DATE_FORMAT(booking_date,'%%Y-%%m') as month,
                COUNT(*) as total_bookings,
                SUM(CASE WHEN payment_status='Paid' THEN 1 ELSE 0 END) as paid_bookings,
                SUM(net_amount) as total_revenue,
                SUM(CASE WHEN booking_type='Wellness Package' THEN net_amount ELSE 0 END) as pkg_revenue,
                SUM(CASE WHEN booking_type='Single Class' THEN net_amount ELSE 0 END) as cls_revenue
         FROM `tabBooking` {conditions}
-        GROUP BY DATE_FORMAT(booking_date,'%Y-%m')
+        GROUP BY DATE_FORMAT(booking_date,'%%Y-%%m')
         ORDER BY month DESC
     """, values, as_dict=True)
     for row in rows:
