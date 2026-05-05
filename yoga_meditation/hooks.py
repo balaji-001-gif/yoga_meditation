@@ -30,11 +30,11 @@ scheduler_events = {
 # ─── On Submit Events ─────────────────────────
 doc_events = {
     "Booking": {
-        "on_submit": "yoga_meditation.doctype.booking.booking.on_booking_submit",
-        "on_cancel": "yoga_meditation.doctype.booking.booking.on_booking_cancel",
+        "on_submit": "yoga_meditation.yoga_meditation.doctype.booking.booking.on_booking_submit",
+        "on_cancel": "yoga_meditation.yoga_meditation.doctype.booking.booking.on_booking_cancel",
     },
     "Attendance Record": {
-        "after_insert": "yoga_meditation.doctype.attendance_record.attendance_record.update_class_count",
+        "after_insert": "yoga_meditation.yoga_meditation.doctype.attendance_record.attendance_record.update_class_count",
     },
 }
 
