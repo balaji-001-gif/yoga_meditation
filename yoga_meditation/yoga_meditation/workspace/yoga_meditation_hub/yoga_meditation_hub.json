@@ -21,7 +21,6 @@
   "owner": "Administrator",
   "docstatus": 0,
   "idx": 0,
-
   "charts": [
     {
       "chart_name": "Sessions This Month",
@@ -36,7 +35,6 @@
       "label": "Member Subscription Status"
     }
   ],
-
   "shortcuts": [
     {
       "type": "DocType",
@@ -87,25 +85,13 @@
       "type": "Report",
       "link_to": "Revenue Report",
       "label": "Revenue Report"
-    },
-    {
-      "type": "DocType",
-      "link_to": "Wellness Goal",
-      "label": "Wellness Goal"
-    },
-    {
-      "type": "DocType",
-      "link_to": "Progress Tracker",
-      "label": "Progress Tracker"
     }
   ],
-
   "content": "[{\"id\":\"cb-member\",\"type\":\"card\",\"data\":{\"card_name\":\"Member Management\",\"col\":12}},{\"id\":\"cb-class\",\"type\":\"card\",\"data\":{\"card_name\":\"Classes & Sessions\",\"col\":12}},{\"id\":\"cb-instructor\",\"type\":\"card\",\"data\":{\"card_name\":\"Instructor Management\",\"col\":12}},{\"id\":\"cb-meditation\",\"type\":\"card\",\"data\":{\"card_name\":\"Meditation Programs\",\"col\":12}},{\"id\":\"cb-health\",\"type\":\"card\",\"data\":{\"card_name\":\"Health & Wellness\",\"col\":12}},{\"id\":\"cb-billing\",\"type\":\"card\",\"data\":{\"card_name\":\"Membership & Billing\",\"col\":12}},{\"id\":\"cb-reports\",\"type\":\"card\",\"data\":{\"card_name\":\"Reports & Analytics\",\"col\":12}}]",
-
   "links": [
-
     {
-      "hidden": 0, "idx": 1,
+      "hidden": 0,
+      "idx": 1,
       "is_query_report": 0,
       "label": "Member Management",
       "link_count": 0,
@@ -114,49 +100,44 @@
       "type": "Card Break"
     },
     {
-      "dependencies": "", "hidden": 0, "idx": 2,
-      "is_query_report": 0,
+      "hidden": 0,
+      "idx": 2,
       "label": "Student Member",
-      "link_count": 0,
       "link_to": "Student Member",
       "link_type": "DocType",
       "onboard": 1,
       "type": "Link"
     },
     {
-      "dependencies": "", "hidden": 0, "idx": 3,
-      "is_query_report": 0,
+      "hidden": 0,
+      "idx": 3,
       "label": "Wellness Package",
-      "link_count": 0,
       "link_to": "Wellness Package",
       "link_type": "DocType",
       "onboard": 1,
       "type": "Link"
     },
     {
-      "dependencies": "", "hidden": 0, "idx": 4,
-      "is_query_report": 0,
+      "hidden": 0,
+      "idx": 4,
       "label": "Wellness Goal",
-      "link_count": 0,
       "link_to": "Wellness Goal",
       "link_type": "DocType",
       "onboard": 1,
       "type": "Link"
     },
     {
-      "dependencies": "", "hidden": 0, "idx": 5,
-      "is_query_report": 0,
+      "hidden": 0,
+      "idx": 5,
       "label": "Progress Tracker",
-      "link_count": 0,
       "link_to": "Progress Tracker",
       "link_type": "DocType",
       "onboard": 0,
       "type": "Link"
     },
-
     {
-      "hidden": 0, "idx": 6,
-      "is_query_report": 0,
+      "hidden": 0,
+      "idx": 6,
       "label": "Classes & Sessions",
       "link_count": 0,
       "onboard": 1,
@@ -164,49 +145,44 @@
       "type": "Card Break"
     },
     {
-      "dependencies": "", "hidden": 0, "idx": 7,
-      "is_query_report": 0,
+      "hidden": 0,
+      "idx": 7,
       "label": "Yoga Class",
-      "link_count": 0,
       "link_to": "Yoga Class",
       "link_type": "DocType",
       "onboard": 1,
       "type": "Link"
     },
     {
-      "dependencies": "", "hidden": 0, "idx": 8,
-      "is_query_report": 0,
+      "hidden": 0,
+      "idx": 8,
       "label": "Meditation Session",
-      "link_count": 0,
       "link_to": "Meditation Session",
       "link_type": "DocType",
       "onboard": 1,
       "type": "Link"
     },
     {
-      "dependencies": "", "hidden": 0, "idx": 9,
-      "is_query_report": 0,
+      "hidden": 0,
+      "idx": 9,
       "label": "Booking",
-      "link_count": 0,
       "link_to": "Booking",
       "link_type": "DocType",
       "onboard": 1,
       "type": "Link"
     },
     {
-      "dependencies": "", "hidden": 0, "idx": 10,
-      "is_query_report": 0,
+      "hidden": 0,
+      "idx": 10,
       "label": "Attendance Record",
-      "link_count": 0,
       "link_to": "Attendance Record",
       "link_type": "DocType",
       "onboard": 0,
       "type": "Link"
     },
-
     {
-      "hidden": 0, "idx": 11,
-      "is_query_report": 0,
+      "hidden": 0,
+      "idx": 11,
       "label": "Instructor Management",
       "link_count": 0,
       "onboard": 1,
@@ -214,19 +190,17 @@
       "type": "Card Break"
     },
     {
-      "dependencies": "", "hidden": 0, "idx": 12,
-      "is_query_report": 0,
+      "hidden": 0,
+      "idx": 12,
       "label": "Instructor",
-      "link_count": 0,
       "link_to": "Instructor",
       "link_type": "DocType",
       "onboard": 1,
       "type": "Link"
     },
-
     {
-      "hidden": 0, "idx": 13,
-      "is_query_report": 0,
+      "hidden": 0,
+      "idx": 13,
       "label": "Meditation Programs",
       "link_count": 0,
       "onboard": 0,
@@ -234,19 +208,17 @@
       "type": "Card Break"
     },
     {
-      "dependencies": "", "hidden": 0, "idx": 14,
-      "is_query_report": 0,
+      "hidden": 0,
+      "idx": 14,
       "label": "Meditation Session",
-      "link_count": 0,
       "link_to": "Meditation Session",
       "link_type": "DocType",
       "onboard": 0,
       "type": "Link"
     },
-
     {
-      "hidden": 0, "idx": 15,
-      "is_query_report": 0,
+      "hidden": 0,
+      "idx": 15,
       "label": "Health & Wellness",
       "link_count": 0,
       "onboard": 0,
@@ -254,29 +226,26 @@
       "type": "Card Break"
     },
     {
-      "dependencies": "", "hidden": 0, "idx": 16,
-      "is_query_report": 0,
+      "hidden": 0,
+      "idx": 16,
       "label": "Wellness Goal",
-      "link_count": 0,
       "link_to": "Wellness Goal",
       "link_type": "DocType",
       "onboard": 0,
       "type": "Link"
     },
     {
-      "dependencies": "", "hidden": 0, "idx": 17,
-      "is_query_report": 0,
+      "hidden": 0,
+      "idx": 17,
       "label": "Progress Tracker",
-      "link_count": 0,
       "link_to": "Progress Tracker",
       "link_type": "DocType",
       "onboard": 0,
       "type": "Link"
     },
-
     {
-      "hidden": 0, "idx": 18,
-      "is_query_report": 0,
+      "hidden": 0,
+      "idx": 18,
       "label": "Membership & Billing",
       "link_count": 0,
       "onboard": 0,
@@ -284,29 +253,26 @@
       "type": "Card Break"
     },
     {
-      "dependencies": "", "hidden": 0, "idx": 19,
-      "is_query_report": 0,
+      "hidden": 0,
+      "idx": 19,
       "label": "Student Member",
-      "link_count": 0,
       "link_to": "Student Member",
       "link_type": "DocType",
       "onboard": 0,
       "type": "Link"
     },
     {
-      "dependencies": "", "hidden": 0, "idx": 20,
-      "is_query_report": 0,
+      "hidden": 0,
+      "idx": 20,
       "label": "Wellness Package",
-      "link_count": 0,
       "link_to": "Wellness Package",
       "link_type": "DocType",
       "onboard": 0,
       "type": "Link"
     },
-
     {
-      "hidden": 0, "idx": 21,
-      "is_query_report": 0,
+      "hidden": 0,
+      "idx": 21,
       "label": "Reports & Analytics",
       "link_count": 0,
       "onboard": 0,
@@ -314,30 +280,30 @@
       "type": "Card Break"
     },
     {
-      "dependencies": "", "hidden": 0, "idx": 22,
+      "hidden": 0,
+      "idx": 22,
       "is_query_report": 1,
       "label": "Student Progress Report",
-      "link_count": 0,
       "link_to": "Student Progress Report",
       "link_type": "Report",
       "onboard": 0,
       "type": "Link"
     },
     {
-      "dependencies": "", "hidden": 0, "idx": 23,
+      "hidden": 0,
+      "idx": 23,
       "is_query_report": 1,
       "label": "Class Attendance Report",
-      "link_count": 0,
       "link_to": "Class Attendance Report",
       "link_type": "Report",
       "onboard": 0,
       "type": "Link"
     },
     {
-      "dependencies": "", "hidden": 0, "idx": 24,
+      "hidden": 0,
+      "idx": 24,
       "is_query_report": 1,
       "label": "Revenue Report",
-      "link_count": 0,
       "link_to": "Revenue Report",
       "link_type": "Report",
       "onboard": 0,
