@@ -11,6 +11,9 @@ def create_demo_data():
     # 2. Create Instructors
     create_instructors()
     
+    # 2.5 Ensure Customer Group exists
+    create_customer_groups()
+    
     # 3. Create Student Members
     create_students()
     
@@ -53,6 +56,14 @@ def create_instructors():
             # Add specialization
             doc.append("specializations", {"yoga_type": ins["specialty"]})
             doc.insert()
+
+def create_customer_groups():
+    if not frappe.db.exists("Customer Group", "Wellness Members"):
+        frappe.get_doc({
+            "doctype": "Customer Group",
+            "customer_group_name": "Wellness Members",
+            "is_group": 0
+        }).insert()
 
 def create_students():
     students = [
