@@ -103,6 +103,7 @@
   "content": "[{\"id\":\"cb-member\",\"type\":\"card\",\"data\":{\"card_name\":\"Member Management\",\"col\":12}},{\"id\":\"cb-class\",\"type\":\"card\",\"data\":{\"card_name\":\"Classes & Sessions\",\"col\":12}},{\"id\":\"cb-instructor\",\"type\":\"card\",\"data\":{\"card_name\":\"Instructor Management\",\"col\":12}},{\"id\":\"cb-meditation\",\"type\":\"card\",\"data\":{\"card_name\":\"Meditation Programs\",\"col\":12}},{\"id\":\"cb-health\",\"type\":\"card\",\"data\":{\"card_name\":\"Health & Wellness\",\"col\":12}},{\"id\":\"cb-billing\",\"type\":\"card\",\"data\":{\"card_name\":\"Membership & Billing\",\"col\":12}},{\"id\":\"cb-reports\",\"type\":\"card\",\"data\":{\"card_name\":\"Reports & Analytics\",\"col\":12}}]",
 
   "links": [
+
     {
       "hidden": 0, "idx": 1,
       "is_query_report": 0,
@@ -226,6 +227,26 @@
     {
       "hidden": 0, "idx": 13,
       "is_query_report": 0,
+      "label": "Meditation Programs",
+      "link_count": 0,
+      "onboard": 0,
+      "title": "Meditation Programs",
+      "type": "Card Break"
+    },
+    {
+      "dependencies": "", "hidden": 0, "idx": 14,
+      "is_query_report": 0,
+      "label": "Meditation Session",
+      "link_count": 0,
+      "link_to": "Meditation Session",
+      "link_type": "DocType",
+      "onboard": 0,
+      "type": "Link"
+    },
+
+    {
+      "hidden": 0, "idx": 15,
+      "is_query_report": 0,
       "label": "Health & Wellness",
       "link_count": 0,
       "onboard": 0,
@@ -233,7 +254,7 @@
       "type": "Card Break"
     },
     {
-      "dependencies": "", "hidden": 0, "idx": 14,
+      "dependencies": "", "hidden": 0, "idx": 16,
       "is_query_report": 0,
       "label": "Wellness Goal",
       "link_count": 0,
@@ -243,7 +264,7 @@
       "type": "Link"
     },
     {
-      "dependencies": "", "hidden": 0, "idx": 15,
+      "dependencies": "", "hidden": 0, "idx": 17,
       "is_query_report": 0,
       "label": "Progress Tracker",
       "link_count": 0,
@@ -254,7 +275,7 @@
     },
 
     {
-      "hidden": 0, "idx": 16,
+      "hidden": 0, "idx": 18,
       "is_query_report": 0,
       "label": "Membership & Billing",
       "link_count": 0,
@@ -263,7 +284,17 @@
       "type": "Card Break"
     },
     {
-      "dependencies": "", "hidden": 0, "idx": 17,
+      "dependencies": "", "hidden": 0, "idx": 19,
+      "is_query_report": 0,
+      "label": "Student Member",
+      "link_count": 0,
+      "link_to": "Student Member",
+      "link_type": "DocType",
+      "onboard": 0,
+      "type": "Link"
+    },
+    {
+      "dependencies": "", "hidden": 0, "idx": 20,
       "is_query_report": 0,
       "label": "Wellness Package",
       "link_count": 0,
@@ -274,7 +305,7 @@
     },
 
     {
-      "hidden": 0, "idx": 18,
+      "hidden": 0, "idx": 21,
       "is_query_report": 0,
       "label": "Reports & Analytics",
       "link_count": 0,
@@ -283,7 +314,7 @@
       "type": "Card Break"
     },
     {
-      "dependencies": "", "hidden": 0, "idx": 19,
+      "dependencies": "", "hidden": 0, "idx": 22,
       "is_query_report": 1,
       "label": "Student Progress Report",
       "link_count": 0,
@@ -293,7 +324,7 @@
       "type": "Link"
     },
     {
-      "dependencies": "", "hidden": 0, "idx": 20,
+      "dependencies": "", "hidden": 0, "idx": 23,
       "is_query_report": 1,
       "label": "Class Attendance Report",
       "link_count": 0,
@@ -303,7 +334,7 @@
       "type": "Link"
     },
     {
-      "dependencies": "", "hidden": 0, "idx": 21,
+      "dependencies": "", "hidden": 0, "idx": 24,
       "is_query_report": 1,
       "label": "Revenue Report",
       "link_count": 0,
