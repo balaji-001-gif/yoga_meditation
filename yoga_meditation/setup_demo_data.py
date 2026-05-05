@@ -82,14 +82,15 @@ def create_students():
 
 def create_packages():
     packages = [
-        {"name": "10 Class Pass", "price": 150, "type": "Monthly"},
-        {"name": "Unlimited Monthly", "price": 200, "type": "Monthly"}
+        {"name": "10 Class Pass", "code": "10CP", "price": 150, "type": "Monthly"},
+        {"name": "Unlimited Monthly", "code": "UNL", "price": 200, "type": "Monthly"}
     ]
     for p in packages:
         if not frappe.db.exists("Wellness Package", p["name"]):
             frappe.get_doc({
                 "doctype": "Wellness Package",
                 "package_name": p["name"],
+                "package_code": p["code"],
                 "package_type": p["type"],
                 "price": p["price"]
             }).insert()
