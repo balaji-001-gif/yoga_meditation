@@ -65,7 +65,7 @@ def create_students():
                 "doctype": "Student Member",
                 "full_name": s["name"],
                 "email_id": s["email"],
-                "mobile_no": s.get("phone", "9876543210"),
+                "mobile_no": s.get("phone", "+919876543210"),
                 "membership_status": "Active"
             }).insert()
 
