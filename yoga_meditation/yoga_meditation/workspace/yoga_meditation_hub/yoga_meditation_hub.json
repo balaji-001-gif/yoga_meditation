@@ -1,34 +1,379 @@
 {
- "charts": [
-  {"chart_name": "Class Bookings This Month", "label": "Class Bookings This Month"},
-  {"chart_name": "Revenue Trend", "label": "Revenue Trend"},
-  {"chart_name": "Student Membership Status", "label": "Membership Status"}
- ],
- "content": "[{\"id\":\"intro\",\"type\":\"header\",\"data\":{\"text\":\"🧘 Yoga & Meditation Hub\",\"col\":12}},{\"id\":\"shortcuts_row\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Yoga Class\",\"col\":3}},{\"id\":\"student\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Student Member\",\"col\":3}},{\"id\":\"booking\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Booking\",\"col\":3}},{\"id\":\"pkg\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Wellness Package\",\"col\":3}}]",
- "creation": "2024-01-01 00:00:00.000000",
- "doctype": "Workspace",
- "hide_custom": 0,
- "is_hidden": 0,
- "label": "Yoga & Meditation",
- "module": "Yoga Meditation",
- "name": "Yoga & Meditation",
- "onboarding": "",
- "parent_page": "",
- "public": 1,
- "roles": [],
- "sequence_id": 1.0,
- "shortcuts": [
-  {"color": "Green", "format": "{} Active Classes", "label": "Yoga Class", "link_to": "Yoga Class", "stats_filter": "{\"status\": \"Scheduled\"}", "type": "DocType"},
-  {"color": "Blue", "format": "{} Students", "label": "Student Member", "link_to": "Student Member", "type": "DocType"},
-  {"color": "Orange", "format": "{} Bookings", "label": "Booking", "link_to": "Booking", "stats_filter": "{\"booking_status\": \"Confirmed\"}", "type": "DocType"},
-  {"color": "Purple", "format": "{} Packages", "label": "Wellness Package", "link_to": "Wellness Package", "stats_filter": "{\"is_active\": 1}", "type": "DocType"},
-  {"color": "Teal", "label": "Instructor", "link_to": "Instructor", "type": "DocType"},
-  {"color": "Pink", "label": "Meditation Session", "link_to": "Meditation Session", "type": "DocType"},
-  {"color": "Yellow", "label": "Attendance Record", "link_to": "Attendance Record", "type": "DocType"},
-  {"label": "Student Progress Report", "link_to": "Student Progress Report", "type": "Report"},
-  {"label": "Class Attendance Report", "link_to": "Class Attendance Report", "type": "Report"},
-  {"label": "Revenue Report", "link_to": "Revenue Report", "type": "Report"},
-  {"label": "Wellness Goal", "link_to": "Wellness Goal", "type": "DocType"},
-  {"label": "Progress Tracker", "link_to": "Progress Tracker", "type": "DocType"}
- ]
+  "doctype": "Workspace",
+  "name": "Sarva Yoga",
+  "label": "Sarva Yoga",
+  "title": "Sarva Yoga",
+  "icon": "fa fa-leaf",
+  "module": "Sarva Yoga",
+  "public": 1,
+  "is_standard": 1,
+  "is_hidden": 0,
+  "is_default": 0,
+  "developer_mode_only": 0,
+  "disable_user_customization": 0,
+  "hide_custom": 0,
+  "restrict_to_domain": "",
+  "for_user": "",
+  "sequence_id": 21,
+  "creation": "2024-01-01 00:00:00.000000",
+  "modified": "2024-01-01 00:00:00.000000",
+  "modified_by": "Administrator",
+  "owner": "Administrator",
+  "docstatus": 0,
+  "idx": 0,
+
+  "charts": [
+    {
+      "chart_name": "Sessions This Month",
+      "label": "Sessions This Month"
+    },
+    {
+      "chart_name": "Revenue Trend",
+      "label": "Revenue Trend"
+    },
+    {
+      "chart_name": "Member Subscription Status",
+      "label": "Member Subscription Status"
+    }
+  ],
+
+  "content": "[{\"id\":\"cb-member\",\"type\":\"card\",\"data\":{\"card_name\":\"Member Management\",\"col\":12}},{\"id\":\"cb-class\",\"type\":\"card\",\"data\":{\"card_name\":\"Classes & Sessions\",\"col\":12}},{\"id\":\"cb-instructor\",\"type\":\"card\",\"data\":{\"card_name\":\"Instructor Management\",\"col\":12}},{\"id\":\"cb-meditation\",\"type\":\"card\",\"data\":{\"card_name\":\"Meditation Programs\",\"col\":12}},{\"id\":\"cb-health\",\"type\":\"card\",\"data\":{\"card_name\":\"Health & Wellness\",\"col\":12}},{\"id\":\"cb-billing\",\"type\":\"card\",\"data\":{\"card_name\":\"Membership & Billing\",\"col\":12}},{\"id\":\"cb-reports\",\"type\":\"card\",\"data\":{\"card_name\":\"Reports & Analytics\",\"col\":12}}]",
+
+  "shortcuts": [
+    {
+      "color": "Blue",
+      "format": "{} Active",
+      "label": "Active Members",
+      "link_to": "Member Profile",
+      "stats_filter": "{\"membership_status\": \"Active\"}",
+      "type": "DocType"
+    },
+    {
+      "color": "Green",
+      "format": "{} Today",
+      "label": "Today's Sessions",
+      "link_to": "Yoga Session",
+      "stats_filter": "{\"session_date\": \"today\", \"status\": [\"in\", [\"Open\", \"In Progress\"]]}",
+      "type": "DocType"
+    },
+    {
+      "color": "Purple",
+      "format": "{} Confirmed",
+      "label": "Active Bookings",
+      "link_to": "Session Booking",
+      "stats_filter": "{\"status\": \"Confirmed\"}",
+      "type": "DocType"
+    },
+    {
+      "color": "Orange",
+      "format": "{} Expiring",
+      "label": "Expiring Subscriptions",
+      "link_to": "Member Subscription",
+      "stats_filter": "{\"status\": \"Active\"}",
+      "type": "DocType"
+    },
+    {
+      "color": "Red",
+      "format": "{} Waiting",
+      "label": "Waitlist Entries",
+      "link_to": "Waitlist Entry",
+      "stats_filter": "{\"status\": \"Waiting\"}",
+      "type": "DocType"
+    },
+    {
+      "color": "Teal",
+      "format": "{} Active",
+      "label": "Active Instructors",
+      "link_to": "Instructor Profile",
+      "stats_filter": "{\"is_active\": 1}",
+      "type": "DocType"
+    },
+    {
+      "color": "Cyan",
+      "format": "{} Programs",
+      "label": "Meditation Programs",
+      "link_to": "Meditation Program",
+      "stats_filter": "{\"status\": \"Active\"}",
+      "type": "DocType"
+    },
+    {
+      "color": "Yellow",
+      "label": "Monthly Revenue",
+      "link_to": "Member Subscription",
+      "type": "DocType"
+    }
+  ],
+
+  "links": [
+
+    {
+      "hidden": 0, "idx": 1,
+      "is_query_report": 0,
+      "label": "Member Management",
+      "link_count": 0,
+      "onboard": 1,
+      "title": "Member Management",
+      "type": "Card Break"
+    },
+    {
+      "dependencies": "", "hidden": 0, "idx": 2,
+      "is_query_report": 0,
+      "label": "Member Profile",
+      "link_count": 0,
+      "link_to": "Member Profile",
+      "link_type": "DocType",
+      "onboard": 1,
+      "type": "Link"
+    },
+    {
+      "dependencies": "", "hidden": 0, "idx": 3,
+      "is_query_report": 0,
+      "label": "Member Subscription",
+      "link_count": 0,
+      "link_to": "Member Subscription",
+      "link_type": "DocType",
+      "onboard": 1,
+      "type": "Link"
+    },
+    {
+      "dependencies": "", "hidden": 0, "idx": 4,
+      "is_query_report": 0,
+      "label": "Membership Plan",
+      "link_count": 0,
+      "link_to": "Membership Plan",
+      "link_type": "DocType",
+      "onboard": 1,
+      "type": "Link"
+    },
+    {
+      "dependencies": "", "hidden": 0, "idx": 5,
+      "is_query_report": 0,
+      "label": "Waitlist Entry",
+      "link_count": 0,
+      "link_to": "Waitlist Entry",
+      "link_type": "DocType",
+      "onboard": 0,
+      "type": "Link"
+    },
+    {
+      "dependencies": "", "hidden": 0, "idx": 6,
+      "is_query_report": 0,
+      "label": "Feedback Form",
+      "link_count": 0,
+      "link_to": "Feedback Form",
+      "link_type": "DocType",
+      "onboard": 0,
+      "type": "Link"
+    },
+
+    {
+      "hidden": 0, "idx": 7,
+      "is_query_report": 0,
+      "label": "Classes & Sessions",
+      "link_count": 0,
+      "onboard": 1,
+      "title": "Classes & Sessions",
+      "type": "Card Break"
+    },
+    {
+      "dependencies": "", "hidden": 0, "idx": 8,
+      "is_query_report": 0,
+      "label": "Yoga Class",
+      "link_count": 0,
+      "link_to": "Yoga Class",
+      "link_type": "DocType",
+      "onboard": 1,
+      "type": "Link"
+    },
+    {
+      "dependencies": "", "hidden": 0, "idx": 9,
+      "is_query_report": 0,
+      "label": "Yoga Session",
+      "link_count": 0,
+      "link_to": "Yoga Session",
+      "link_type": "DocType",
+      "onboard": 1,
+      "type": "Link"
+    },
+    {
+      "dependencies": "", "hidden": 0, "idx": 10,
+      "is_query_report": 0,
+      "label": "Session Booking",
+      "link_count": 0,
+      "link_to": "Session Booking",
+      "link_type": "DocType",
+      "onboard": 1,
+      "type": "Link"
+    },
+    {
+      "dependencies": "", "hidden": 0, "idx": 11,
+      "is_query_report": 0,
+      "label": "Attendance Log",
+      "link_count": 0,
+      "link_to": "Attendance Log",
+      "link_type": "DocType",
+      "onboard": 0,
+      "type": "Link"
+    },
+    {
+      "dependencies": "", "hidden": 0, "idx": 12,
+      "is_query_report": 0,
+      "label": "Class Category",
+      "link_count": 0,
+      "link_to": "Class Category",
+      "link_type": "DocType",
+      "onboard": 0,
+      "type": "Link"
+    },
+
+    {
+      "hidden": 0, "idx": 13,
+      "is_query_report": 0,
+      "label": "Instructor Management",
+      "link_count": 0,
+      "onboard": 1,
+      "title": "Instructor Management",
+      "type": "Card Break"
+    },
+    {
+      "dependencies": "", "hidden": 0, "idx": 14,
+      "is_query_report": 0,
+      "label": "Instructor Profile",
+      "link_count": 0,
+      "link_to": "Instructor Profile",
+      "link_type": "DocType",
+      "onboard": 1,
+      "type": "Link"
+    },
+
+    {
+      "hidden": 0, "idx": 15,
+      "is_query_report": 0,
+      "label": "Meditation Programs",
+      "link_count": 0,
+      "onboard": 0,
+      "title": "Meditation Programs",
+      "type": "Card Break"
+    },
+    {
+      "dependencies": "", "hidden": 0, "idx": 16,
+      "is_query_report": 0,
+      "label": "Meditation Program",
+      "link_count": 0,
+      "link_to": "Meditation Program",
+      "link_type": "DocType",
+      "onboard": 0,
+      "type": "Link"
+    },
+
+    {
+      "hidden": 0, "idx": 17,
+      "is_query_report": 0,
+      "label": "Health & Wellness",
+      "link_count": 0,
+      "onboard": 0,
+      "title": "Health & Wellness",
+      "type": "Card Break"
+    },
+    {
+      "dependencies": "", "hidden": 0, "idx": 18,
+      "is_query_report": 0,
+      "label": "Feedback Form",
+      "link_count": 0,
+      "link_to": "Feedback Form",
+      "link_type": "DocType",
+      "onboard": 0,
+      "type": "Link"
+    },
+
+    {
+      "hidden": 0, "idx": 19,
+      "is_query_report": 0,
+      "label": "Membership & Billing",
+      "link_count": 0,
+      "onboard": 0,
+      "title": "Membership & Billing",
+      "type": "Card Break"
+    },
+    {
+      "dependencies": "", "hidden": 0, "idx": 20,
+      "is_query_report": 0,
+      "label": "Member Subscription",
+      "link_count": 0,
+      "link_to": "Member Subscription",
+      "link_type": "DocType",
+      "onboard": 0,
+      "type": "Link"
+    },
+    {
+      "dependencies": "", "hidden": 0, "idx": 21,
+      "is_query_report": 0,
+      "label": "Membership Plan",
+      "link_count": 0,
+      "link_to": "Membership Plan",
+      "link_type": "DocType",
+      "onboard": 0,
+      "type": "Link"
+    },
+
+    {
+      "hidden": 0, "idx": 22,
+      "is_query_report": 0,
+      "label": "Reports & Analytics",
+      "link_count": 0,
+      "onboard": 0,
+      "title": "Reports & Analytics",
+      "type": "Card Break"
+    },
+    {
+      "dependencies": "", "hidden": 0, "idx": 23,
+      "is_query_report": 1,
+      "label": "Class Attendance Summary",
+      "link_count": 0,
+      "link_to": "Class Attendance Summary",
+      "link_type": "Report",
+      "onboard": 0,
+      "type": "Link"
+    },
+    {
+      "dependencies": "", "hidden": 0, "idx": 24,
+      "is_query_report": 1,
+      "label": "Member Subscription Report",
+      "link_count": 0,
+      "link_to": "Member Subscription Report",
+      "link_type": "Report",
+      "onboard": 0,
+      "type": "Link"
+    },
+    {
+      "dependencies": "", "hidden": 0, "idx": 25,
+      "is_query_report": 1,
+      "label": "Revenue Analysis",
+      "link_count": 0,
+      "link_to": "Revenue Analysis",
+      "link_type": "Report",
+      "onboard": 0,
+      "type": "Link"
+    },
+    {
+      "dependencies": "", "hidden": 0, "idx": 26,
+      "is_query_report": 1,
+      "label": "Instructor Performance",
+      "link_count": 0,
+      "link_to": "Instructor Performance",
+      "link_type": "Report",
+      "onboard": 0,
+      "type": "Link"
+    },
+    {
+      "dependencies": "", "hidden": 0, "idx": 27,
+      "is_query_report": 1,
+      "label": "Session Utilization Report",
+      "link_count": 0,
+      "link_to": "Session Utilization Report",
+      "link_type": "Report",
+      "onboard": 0,
+      "type": "Link"
+    }
+  ]
 }
